@@ -1,0 +1,60 @@
+<app-root></app-root>
+
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="background-color: black;">
+    <nav class="nav nav-pills flex-column flex-sm-row">
+      <a id="a1" class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true">DOG GENTLEMAN!</a>
+      <a id="a3" class="flex-sm-fill text-sm-center nav-link active" routerLink = "/">Menu inicial</a>
+      <a id="a2" class="flex-sm-fill text-sm-center nav-link" routerLink = "/lista">Lista</a>
+      <a id="a2" class="flex-sm-fill text-sm-center nav-link" routerLink = "/carrinho">Carrinho</a>
+      <a id="a2" class="flex-sm-fill text-sm-center nav-link" routerLink = "/racao">Cadastro de Ração</a>
+      <a id="a2" class="flex-sm-fill text-sm-center nav-link" routerLink = "/produtos">Cadastro de Produtos</a>
+    </nav>
+</ul>
+
+<p id="titulo">DOG GENTLEMAN!</p>
+<br><br><br>
+
+<table style="margin-left: 100px">
+    <td>
+      <label for="racao">Preço da Ração</label>
+      <input type="text" class="form-control">
+    </td>        
+</table>
+<table style="margin-left: 120px">
+  <td>
+    <input class="form-check-input" type="checkbox" id="gridCheck">
+    <label class="form-check-label" for="gridCheck">
+      Confirma as informações acima?
+    </label>
+  </td>
+</table>
+<br>
+<table style="margin-left: 100px">
+  <a id="botao" (click)="cadastrar()"  type="submit" class="btn btn-primary" >Cadastrar</a>&nbsp;
+  <a id="botao" (click)="cancelar()"  type="submit" class="btn btn-primary" >Cancelar</a>
+</table>
+  
+
+<br><br><br><br>
+  
+    <table style="margin-left: 100px">
+      <p>Lista de Produtos</p>
+      <tr *ngFor = 'let p of produto' >
+        <td>{{p.Id}}</td>
+        <td>{{p.Peso}}</td>
+        <td>{{p.Nome}}</td>
+        <td>{{p.Preco}}</td>
+        <td> <button (click) = 'getProduto(p.Id)'>Editar</button></td>
+        <td><button (click) = 'deleteProduto(p.Id)'></button>Remover</td>
+      </tr>
+    </table>
+  
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

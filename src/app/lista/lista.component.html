@@ -1,0 +1,77 @@
+<app-root></app-root>
+
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="background-color: black;">
+    <nav class="nav nav-pills flex-column flex-sm-row">
+        <a id="a1" class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true">DOG GENTLEMAN!</a>
+      <a id="a3" class="flex-sm-fill text-sm-center nav-link active" routerLink = "/">Menu inicial</a>
+      <a id="a2" class="flex-sm-fill text-sm-center nav-link" routerLink = "/lista">Lista</a>
+      <a id="a2" class="flex-sm-fill text-sm-center nav-link" routerLink = "/carrinho">Carrinho</a>
+      <a id="a2" class="flex-sm-fill text-sm-center nav-link" routerLink = "/racao">Cadastro de Ração</a>
+      <a id="a2" class="flex-sm-fill text-sm-center nav-link" routerLink = "/produto">Cadastro de Produtos</a>
+    </nav>
+</ul>
+    
+  <br>
+  
+  <div id="div1" class="col">
+    <h3>Produtos</h3>  
+  </div>
+  <br><br><br>
+  
+  <table id="table1" class="table">
+      <thead class="thead-dark">
+          <tr>
+              <th scope="col">Código do Produto</th>
+              <th scope="col"></th>
+              <th scope="col">Descrição dos Produtos</th>
+              <th scope="col">Preço</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col">Quantidade</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor = 'let l of lista'>
+              <td id="td">{{l.Id}}</td>
+              <td id="td">{{l.Nome}}, {{l.Peso}}</td>
+              <td id="td"></td>
+              <td id="td">{{l.Preco}}</td>
+              <td></td>
+              <td></td>
+              <td>
+                  <div class="input-group">
+                      <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                          <option selected>Qtd.</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                      </select>
+                  </div>
+              </td>
+          </tr>
+
+  </table>
+  <tr>
+    <td>-----------------------------------------------</td>
+    <td>-------------------------------------------------------------------------------------------------------------------------------</td>
+    <td>---------</td>
+    <td>--------------</td>
+    <td>---------</td>
+    <td>---------</td>
+    <td>---------</td>
+    <td><a id="botao" href="carrinho.html" class="btn btn-outline-dark" role="button" aria-pressed="true">Finalizar Pedido</a></td>
+  </tr>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+

@@ -1,0 +1,96 @@
+body
+{
+    color: seashell;
+    background-color: rgb(243, 153, 117);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#a1
+{
+    vertical-align: middle;
+    text-align: center;
+    color: rgb(252, 143, 101);
+}
+
+#a2
+{
+    color: yellow;
+}
+
+#a3
+{
+    background-color: rgb(153, 153, 153);
+    color: black;
+}
+
+#dog
+{
+    margin-left: 100px;
+    text-align: left;
+}
+
+#titulo
+{
+    font-size: 65px;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    text-align: center;
+}
+
+#texto1
+{
+    background-color: rgb(255, 200, 179);
+    color: black;
+}
+
+#texto2
+{
+    margin-block-start: 50px;
+    background-color: rgb(255, 200, 179);
+    color: black;
+    text-align: justify;
+}
+
+#div1
+{
+    background-color: rgb(253, 162, 125);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 60px;
+    font-size: 40px;
+}
+
+#div2
+{
+    background-color: white;
+    color: black;
+    text-align: center;
+    line-height: 60px;
+    font-size: 40px;
+}
+
+#td
+{
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+#form1
+{
+    color: rgb(250, 130, 83);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#form2
+{
+    color:white;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+#botao:hover
+{
+    background:rgb(250, 130, 83);
+    transition: width 2s;
+}
